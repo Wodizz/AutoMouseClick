@@ -181,8 +181,10 @@ namespace AutoMouseClick
                         dataPoint.X * 65536 / mywidth, dataPoint.Y * 65536 / myheight, 0, 0);
                     break;
                 case E_ClickMode.Double:
-                    mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP | MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP,
-                         dataPoint.X * 65536 / mywidth, dataPoint.Y * 65536 / myheight, 0, 0);
+                    mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP,
+                        dataPoint.X * 65536 / mywidth, dataPoint.Y * 65536 / myheight, 0, 0);
+                    mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP,
+                        dataPoint.X * 65536 / mywidth, dataPoint.Y * 65536 / myheight, 0, 0);
                     break;
                 default:
                     break;
